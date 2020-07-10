@@ -22,7 +22,7 @@ connect.then((db)=>{
 }, err =>{console.log(err)})
 
 global.homeStartingContent = "Whats on your mind !";
-global.aboutContent = "Hey there!! Thanks for visiting this website. I am Suyash, Final year student at OIST, Bhopal. This website is built for practice in field of Web Devlopment. The techology stack used are NodeJs, express, Javascript, html. Hope You like it!";
+global.aboutContent = "Hey there!! Thanks for visiting this website. I am Suyash, Final year student at OIST, Bhopal. This website is built for practice in field of Web Devlopment. The techology stack used - NodeJs, express, Javascript, html and mongoDb as database hosted using AWS services. Hope You like it!";
 global.contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
 
 const app = express();

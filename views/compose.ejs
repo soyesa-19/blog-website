@@ -1,0 +1,34 @@
+<%- include partials/header.ejs %>
+
+<script src='/sendBlog.js'></script>
+
+<div class="container">
+        <div class="row">
+                <div class="col-12 col-sm-10">
+
+                        <div class="jumbotron jumbotron-fluid" style="background-color: snow;">
+                                <h2 class="display-4">Compose</h2>
+                                  
+                        </div>
+
+                       
+
+                        <div class="form-group">
+                          <label for="Title">Title</label>
+                          <input type="text" name="title" id='title' class="form-control" placeholder="Title" required>
+                          
+                        </div>
+                        
+                        <div class="form-group">
+                                <label for="Content">Content</label>
+                                <textarea rows = "5" cols = "60" id='desc' name = "description" class="form-control" type="text" placeholder="Content" required></textarea>
+                
+                        </div>
+                        <button onclick="myfunction()" class="btn btn-primary">Submit</button>
+                
+                </div>
+        </div>
+</div>
+
+
+<%- include partials/footer.ejs %>

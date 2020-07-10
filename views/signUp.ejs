@@ -1,0 +1,46 @@
+<%- include partials/header.ejs %>
+
+<html>
+    <headers>
+        <script src="/sendBlog.js"></script>
+        <title>SignUp</title>
+    </headers>
+
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    <h1><span class="badge badge-pill badge-light">SignUp</span></h1>
+                    <!-- <p id="up" style="color: red;"></p> -->
+                    <p><span id="up" class="badge badge-danger" style="background-color: lightcoral;"></span></p>
+
+                    <!-- <a href="/users/signin" id="aup"></a> -->
+                    <a id="aup" href="/users/signin" class="badge badge-primary" style="background-color: lightskyblue;"></a>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" id="email" name="email" placeholder="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" id="uname" name="username" placeholder="username" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="pass" name="password" class="form-control" placeholder="password" required>
+                    </div>
+                    <br>
+                    <!-- <button onclick="up()">Register</button> -->
+                    <button onclick="up()" type="button" class="btn btn-primary btn-sm">Register</button>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </body>
+</html>
+
+<%- include partials/footer.ejs %>

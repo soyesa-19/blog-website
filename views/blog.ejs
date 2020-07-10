@@ -1,0 +1,19 @@
+<%- include partials/header.ejs %>
+
+<div class="jumbotron jumbotron-fluid" style="background-color: snow;">
+    <h2 class="display-4"><strong><%=title%></strong></h2>
+      
+</div>
+
+<p class="lead"> <%= content %> </p>
+<br>
+<br>
+<br>
+<h6><span class="badge badge-pill badge-primary" style="background-color: coral;">Author :</span><i class="fa fa-user fa-lg" style="color: black;"></i></h6>
+<p><strong><%= author %> </strong></p>
+<br>
+<h6><span class="badge badge-pill badge-primary" style="background-color: coral;">Contact @ </span> </h6>
+<p><strong><%= email %></strong></p>
+
+
+<%- include partials/footer.ejs %>

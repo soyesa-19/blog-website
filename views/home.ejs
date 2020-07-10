@@ -1,0 +1,35 @@
+<%- include partials/header.ejs %>
+
+<script src="/signBtn.js"></script>
+
+<div class="container">
+    <div class="row">
+            <div class="jumbotron jumbotron-fluid" style="background-color: snow;">
+                
+                    <h2 class="display-4"><strong>Start Shairing</strong></h2>
+                    <p class="lead"> <%= homeContent %> </p>
+                    <span class="badge badge-danger" id="signbtn" style="background-color: lightcoral; float: right;"></span>
+                
+            </div>
+            <div class="col-12 col-sm-12">
+                <br>
+            <% for (var i=0 ; i<blog.length ; i++) { %>
+                <span class="badge badge-danger" style="background-color: lightcoral; text-align: center;"><h4><%= blog[i].title %></h4></span>
+                <div class="d-none d-sm-block">
+                    <blockquote class="blockquote">
+                        <p class="mb-0 lead">
+                            <%= blog[i].description.substring(0,150) + " ....." %>
+                            <span class="badge badge-danger" style="background-color:floralwhite;"><a href="/blog/<%=blog[i].title%>" style="text-decoration: none;">Read more</a></span>
+                        </p>
+                    </blockquote>
+                    
+                </div>
+            <br>                
+<% } %>
+        </div>
+    </div>
+</div>
+
+
+
+<%- include partials/footer.ejs %>
